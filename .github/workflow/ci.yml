@@ -1,0 +1,13 @@
+name: Accounts CI
+
+on:
+  push:
+    branches:
+      -  main
+
+jobs:
+  call-central-ci:
+    uses:
+YOUR_GITHUB_USERNAME/ central-ci/blob/main/.github/workflows/secure-ci.yml
+    with:
+      service_name: Accounts
