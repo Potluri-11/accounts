@@ -3,7 +3,7 @@ on:
   workflow_dispatch: 
 jobs:
   pipeline:
-    uses: Potluri-11/central-ci/.github/workflows/ci-reusable-workflow.yml@main
+    uses: Potluri-11/central-ci/.github/workflows/ci-reusable workflow.yml@main
     with:
       service-name: Accounts
       unit-test: echo "No unit tests to perform"
