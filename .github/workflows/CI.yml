@@ -15,8 +15,8 @@ jobs:
   pipeline:
     uses: Potluri-11/central-ci/.github/workflows/ci-reusable workflow.yml@main
     with:
-      service-name: Accounts
+      service-name: accounts
       unit-test: echo "No unit tests to perform"
       integration-test: echo "No integration tests to perform"
       code-coverage: echo "No code coverage reports"
-      image-ref: ghcr.io/Potluri-11/Accounts:1.0.0
+      image-ref: ghcr.io/Potluri-11/accounts:1.0.0
