@@ -1,13 +1,1 @@
-name: Accounts CI
-
-on:
-  push:
-    branches:
-      -  main
-
-jobs:
-  call-central-ci:
-    uses: Potluri-11/central-ci/.github/workflows/secure-ci.yml@main
-    
-    with:
-      service_name: Accounts
+dummy file
