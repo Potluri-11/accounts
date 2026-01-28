@@ -17,5 +17,5 @@ jobs:
       service-name: accounts
       unit-test:  gradle test
       integration-test:  gradle IntegrationTest
-      code-coverage: echo "No code coverage reports"
+      code-coverage: gradle jacocoTestReport
       image-ref: ghcr.io/potluri-11/accounts:1.0.0
