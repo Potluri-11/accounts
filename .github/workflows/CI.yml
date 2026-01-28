@@ -15,7 +15,7 @@ jobs:
     uses: Potluri-11/central-ci/.github/workflows/ci-reusable workflow.yml@main
     with:
       service-name: accounts
-      unit-test:  ./gradlew test
-      integration-test:  ./gradle IntegrationTest
+      unit-test:  gradle test
+      integration-test:  gradle IntegrationTest
       code-coverage: echo "No code coverage reports"
       image-ref: ghcr.io/potluri-11/accounts:1.0.0
