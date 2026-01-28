@@ -35,11 +35,15 @@ configurations {
 /* ---------- Dependencies (AFTER configs) ---------- */
 
 dependencies {
+    // JUnit 5 for unit tests
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+    // JUnit 5 for integration tests
     integrationTestImplementation platform('org.junit:junit-bom:5.10.0')
     integrationTestImplementation 'org.junit.jupiter:junit-jupiter'
+    integrationTestRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 /* ---------- Integration Test Task ---------- */
