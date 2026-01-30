@@ -1,6 +1,6 @@
 package com.example.accounts;
 
-public class AccountType {
+public class AccountTypeServiceTest {
 
     public String getAccountType(int balance) {
         if (balance > 10000) {
