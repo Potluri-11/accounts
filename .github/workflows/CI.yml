@@ -38,7 +38,7 @@ jobs:
     uses: Potluri-11/central-ci/.github/workflows/ci-reusable workflow.yml@main
     with:
       service-name: accounts
-      unit-test: ./gradlew test
-      integration-test: ./gradlew integrationTest
-      code-coverage: ./gradlew jacocoTestReport
+      unit-test: gradle test
+      integration-test: gradle integrationTest
+      code-coverage: gradle jacocoTestReport
       image-ref: ghcr.io/potluri-11/accounts:1.0.0
