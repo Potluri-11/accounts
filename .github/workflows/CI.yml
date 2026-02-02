@@ -1,21 +1,44 @@
+# name: Accounts Repo
+# on:
+#   push:
+#     branches:
+#       - main
+#   workflow_dispatch:
+
+# permissions: 
+#   contents: write
+#   packages: write
+#   id-token: write
+ 
+# jobs:
+#   ci-pipeline:
+#     uses: Potluri-11/central-ci/.github/workflows/ci-reusable workflow.yml@main
+#     with:
+#       service-name: accounts
+#       unit-test:  gradle test
+#       integration-test:  gradle IntegrationTest
+#       code-coverage: gradle jacocoTestReport
+#       image-ref: ghcr.io/potluri-11/accounts:1.0.0
+
 name: Accounts Repo
+
 on:
   push:
     branches:
       - main
   workflow_dispatch:
 
-permissions: 
+permissions:
   contents: write
   packages: write
   id-token: write
- 
+
 jobs:
   ci-pipeline:
-    uses: Potluri-11/central-ci/.github/workflows/ci-reusable workflow.yml@main
+    uses: Potluri-11/central-ci/.github/workflows/reusable-ci.yml@main
     with:
       service-name: accounts
-      unit-test:  gradle test
-      integration-test:  gradle IntegrationTest
-      code-coverage: gradle jacocoTestReport
+      unit-test: ./gradlew test
+      integration-test: ./gradlew integrationTest
+      code-coverage: ./gradlew jacocoTestReport
       image-ref: ghcr.io/potluri-11/accounts:1.0.0
