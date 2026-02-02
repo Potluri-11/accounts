@@ -35,7 +35,7 @@ permissions:
 
 jobs:
   ci-pipeline:
-    uses: Potluri-11/central-ci/.github/workflows/reusable-ci.yml@main
+    uses: Potluri-11/central-ci/.github/workflows/ci-reusable workflow.yml@main
     with:
       service-name: accounts
       unit-test: ./gradlew test
