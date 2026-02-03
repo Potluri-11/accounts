@@ -9,7 +9,7 @@ permissions:
   contents: write
   packages: write
   id-token: write
-  
+   
 jobs:
   ci-pipeline:
     uses: Potluri-11/central-ci/.github/workflows/ci-reusable-workflow.yml@main
