@@ -13,7 +13,6 @@ permissions:
 jobs:
   ci-pipeline:
     uses: Potluri-11/central-ci/.github/workflows/ci-reusable-workflow.yml@main
-    secrets: inherit
     with:
       service-name: accounts
       unit-test:  gradle test
